@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.container {
+  @apply sm: max-w-0.5 max-w-2xl items-center justify-center p-8 ml-70 mt-1 bg-blue-400 rounded-[1rem] shadow-blue-50;
+}
+
+.head-icon {
+  @apply flex flex-row justify-center bg-blue-300;
+}
+
+.img-icon {
+  @apply size-10;
+}
+
+.heading {
+  @apply text-center text-white font-semibold mb-0 p-1;
+}
+
+.s1 {
+  @apply flex flex-col mt-2;
+}
+#inputField {
+  @apply p-1 border-1 border-blue-300 text-white outline-none;
+}
+
+#btn {
+  @apply p-1  px-6 text-blue-500 bg-blue-300 outline-none border-blue-300 border-1 hover:bg-blue-400 cursor-pointer;
+}
+
+.list-div {
+  @apply text-white;
+}
+
+.list-ul {
+  @apply list-disc font-serif font-medium;
+}
+
+.li-delete {
+  @apply p-1  px-4 py-0 text-red-600 bg-blue-300 outline-none border-blue-300 border-1 hover:bg-blue-400 cursor-pointer m-2 absolute right-193;
+}
+
+.completed {
+  @apply line-through text-gray-500;
+}
