@@ -1803,6 +1803,7 @@
 .container {
   margin-top: calc(var(--spacing) * 1);
   margin-left: calc(var(--spacing) * 70);
+  max-width: calc(var(--spacing) * 0.5);
   max-width: var(--container-2xl);
   align-items: center;
   justify-content: center;

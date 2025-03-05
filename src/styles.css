@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .container {
-  @apply sm: max-w-0.5 max-w-2xl items-center justify-center p-8 ml-70 mt-1 bg-blue-400 rounded-[1rem] shadow-blue-50;
+  @apply max-w-0.5 max-w-2xl items-center justify-center p-8 ml-70 mt-1 bg-blue-400 rounded-[1rem] shadow-blue-50;
 }
 
 .head-icon {
