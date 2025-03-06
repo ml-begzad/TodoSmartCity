@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .container {
-  @apply max-w-0.5 max-w-2xl items-center justify-center p-8 ml-70 mt-1 bg-blue-400 rounded-[1rem] shadow-blue-50;
+  @apply mx-auto lg:w-3xl items-center justify-center p-8 my-1 bg-blue-400 rounded-[1rem] shadow-blue-50;
 }
 
 .head-icon {
@@ -19,8 +19,9 @@
 .s1 {
   @apply flex flex-col mt-2;
 }
+
 #inputField {
-  @apply p-1 border-1 border-blue-300 text-white outline-none;
+  @apply p-1 border-1 border-blue-300 text-white outline-none ;
 }
 
 #btn {
@@ -28,15 +29,15 @@
 }
 
 .list-div {
-  @apply text-white;
+  @apply ml-4 text-white flex flex-row relative;
 }
 
-.list-ul {
+#list-ul {
   @apply list-disc font-serif font-medium;
 }
 
 .li-delete {
-  @apply p-1  px-4 py-0 text-red-600 bg-blue-300 outline-none border-blue-300 border-1 hover:bg-blue-400 cursor-pointer m-2 absolute right-193;
+  @apply p-1  px-4 py-0 text-red-600 bg-blue-300 outline-none border-blue-300 border-1 hover:bg-blue-400 cursor-pointer m-2 absolute right-0;
 }
 
 .completed {

@@ -14,6 +14,8 @@ function add() {
       task: todoname,
       completed: false,
     });
+
+    localStorage.setItem("arr", JSON.stringify(listitem));
     generateHTML();
 
     txt.value = "";
@@ -36,6 +38,9 @@ function generateHTML() {
     .forEach((delbtn, index) => {
       delbtn.addEventListener("click", () => {
         listitem.splice(index, 1);
+
+        localStorage.setItem("arr", JSON.stringify(listitem));
+
         generateHTML();
       });
     });
@@ -45,6 +50,7 @@ function generateHTML() {
     .forEach((linethrough, index) => {
       linethrough.addEventListener("click", () => {
         if (listitem[index]) {
+
           listitem[index].completed = !listitem[index].completed;
 
           localStorage.setItem("arr", JSON.stringify(listitem));

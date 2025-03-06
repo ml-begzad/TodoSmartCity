@@ -16,7 +16,7 @@
     --color-gray-500: oklch(0.551 0.027 264.364);
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-2xl: 42rem;
+    --container-3xl: 48rem;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
@@ -844,6 +844,9 @@
   }
   .justify-items-stretch {
     justify-items: stretch;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -1799,18 +1802,24 @@
   .transform-view {
     transform-box: view-box;
   }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
 }
 .container {
-  margin-top: calc(var(--spacing) * 1);
-  margin-left: calc(var(--spacing) * 70);
-  max-width: calc(var(--spacing) * 0.5);
-  max-width: var(--container-2xl);
+  margin-inline: auto;
+  margin-block: calc(var(--spacing) * 1);
   align-items: center;
   justify-content: center;
   border-radius: 1rem;
   background-color: var(--color-blue-400);
   padding: calc(var(--spacing) * 8);
   --tw-shadow-color: var(--color-blue-50);
+  @media (width >= 64rem) {
+    width: var(--container-3xl);
+  }
 }
 .head-icon {
   display: flex;
@@ -1862,9 +1871,13 @@
   }
 }
 .list-div {
+  position: relative;
+  margin-left: calc(var(--spacing) * 4);
+  display: flex;
+  flex-direction: row;
   color: var(--color-white);
 }
-.list-ul {
+#list-ul {
   list-style-type: disc;
   font-family: var(--font-serif);
   --tw-font-weight: var(--font-weight-medium);
@@ -1872,7 +1885,7 @@
 }
 .li-delete {
   position: absolute;
-  right: calc(var(--spacing) * 193);
+  right: calc(var(--spacing) * 0);
   margin: calc(var(--spacing) * 2);
   cursor: pointer;
   border-style: var(--tw-border-style);
