@@ -23,7 +23,7 @@
 #inputField {
   @apply p-1 border-1 border-blue-300 text-white outline-none ;
 }
-
+/* test */
 #btn {
   @apply p-1  px-6 text-blue-500 bg-blue-300 outline-none border-blue-300 border-1 hover:bg-blue-400 cursor-pointer;
 }
